@@ -2,7 +2,10 @@ package com.algaworks.algashop.product.catalog.contract.base;
 
 import com.algaworks.algashop.product.catalog.application.ResourceNotFoundException;
 import com.algaworks.algashop.product.catalog.application.product.management.ProductManagementApplicationService;
-import com.algaworks.algashop.product.catalog.application.product.query.*;
+import com.algaworks.algashop.product.catalog.application.product.query.PageModel;
+import com.algaworks.algashop.product.catalog.application.product.query.ProductDetailOutput;
+import com.algaworks.algashop.product.catalog.application.product.query.ProductDetailOutputTestDataBuilder;
+import com.algaworks.algashop.product.catalog.application.product.query.ProductQueryService;
 import com.algaworks.algashop.product.catalog.presentation.ProductController;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +17,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
